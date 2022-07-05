@@ -1,0 +1,2 @@
+epoch,lr,loss,root_loss,vowel_loss,consonant_loss,kaggle,root,vowel,cons,time
+40.499801,0.000689,3.092179,1.029622,0.628156,0.404779,0.953938,0.929326,0.981459,0.975640,0:12:19
