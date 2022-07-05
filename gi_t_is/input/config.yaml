@@ -1,0 +1,24 @@
+# FPN, Unet or DeepLab
+arch: Unet
+backbone: efficientnet-b3
+pretrained: true
+
+# resize images to this size on the fly  (width,height)
+w_image_size: 320
+h_image_size: 384
+# crop to this fraction of image_size
+crop_size: 1
+
+# optimizer settings
+optim: adam
+lr: 0.001
+weight_decay: 0.01
+batch_size: 32
+
+# scheduler settings
+gamma: 0.96
+
+# data augmentation
+aug_prob: 0.4
+strong_aug: true
+max_cutout: 0
