@@ -1,0 +1,43 @@
+#config consts
+DATASET =     {'train':'train.tar.gz',
+               'test':'test.tar.gz',}
+
+METADATA=     {'meta':'meta64.csv',
+               'meta_x':'meta_extended.csv',
+               'train_x':'train_extended.csv',
+               'test_x':'test_extended.csv',
+               'data_x':'data_extended.csv',
+               'meta_with_fold':'meta64_with_fold_and_mgmt.csv',
+               'train':'train_labels.csv',
+               'train_with_fold':'train_labels_with_fold.csv',
+               'sample_sub':'sample_submission.csv',}
+
+CFGMODEL_DIR_DICT = {'B0_64':'effb0-64/',
+                     'B0_64x8': 'effb0-64x8',
+                     'B0_64x8_chain'}
+
+INPUT_DIR ='/content/drive/My\ Drive/kaggle/brain-tumor/input/'
+
+OUTPUT_DIR = {'BSL':'/content/drive/My\ Drive/kaggle/brain-tumor/output/',
+              'NORM':'/content/drive/My Drive/kaggle/brain-tumor/output/'}
+
+IMPORT_DIR = '/content/drive/My Drive/kaggle/brain-tumor/nbs/py/'
+
+HENGCK_IM_DIR=IMPORT_DIR+'hcode/'
+
+WORK_DIR='/content/'
+
+DATASET_DIR_DICT = {'64': INPUT_DIR+'64/',}
+
+EXPERIMENT='SZ64_B0_TEST_64x8RND'
+EXPERIMENT_DIR = OUTPUT_DIR['BSL'] + EXPERIMENT+'/'
+CFGMODEL_DIR = CFGMODEL_DIR_DICT['B0_64x8']
+MRI_TYPES = ['FLAIR','T1w','T1wCE','T2w']
+
+LR_FACTOR=0.1
+MAX_LR_PLATEAU=20
+PROBS=[0.0,0.0] #mixup, cutmix 
+DATASET_DIR = DATASET_DIR_DICT['64']
+METADATA_DIR = INPUT_DIR+'metadata/'
+FOLDS_SET=[0]
+INITIAL_CHECKPOINTS=[None,None,None,None,None]

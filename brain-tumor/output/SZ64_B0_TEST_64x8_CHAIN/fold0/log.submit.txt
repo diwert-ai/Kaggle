@@ -1,0 +1,40 @@
+
+--- [START 2021-08-18_12-25-57] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1629289564
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+mode : public_test
+valid_dataset : 
+	len = 87
+	df  = (87, 9)
+
+time  0 hr 00 min 
+probability (87,) 
+submit_dir : /content/drive/My Drive/kaggle/brain-tumor/output/SZ64_B0_TEST_64x8_CHAIN/fold0/valid/public_test
+initial_checkpoint : /content/drive/My Drive/kaggle/brain-tumor/output/SZ64_B0_TEST_64x8_CHAIN/fold0/checkpoint/best_model.pth
+df_submit : (87, 2)
+   BraTS21ID  MGMT_value
+0      00001    0.600112
+1      00013    0.552025
+2      00015    0.601820
+3      00027    0.561276
+4      00037    0.567867
+..       ...         ...
+82     00826    0.555019
+83     00829    0.622668
+84     00833    0.514530
+85     00997    0.421836
+86     01006    0.404330
+
+[87 rows x 2 columns]
+
