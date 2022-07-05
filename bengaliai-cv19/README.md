@@ -3,4 +3,4 @@
 
 ## https://www.kaggle.com/competitions/bengaliai-cv19
 
-![Alt-текст](https://avatars1.githubusercontent.com/u/5384215?v=3&s=460 "Орк")
+![Alt-текст]([https://github.com/diwert-ai/Kaggle/blob/main/bengaliai-cv19/s3d7.png])
