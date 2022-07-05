@@ -326,6 +326,9 @@ __pycache__/
 #tf models
 *.h5
 
+#kaggle
+kaggle.json
+
 # Cake - Uncomment if you are using it
 # tools/**
 # !tools/packages.config
