@@ -1,0 +1,56 @@
+21.07.2021
+1. выбрать лучший пайплайн для none 640x640 effb5 (попробовать без mask loss) done
+2. тренировать 5 фолдов image 640x640 yolov5x - not done (не удалось переделать пайплайн)
+3. тренировать study 896x896 effb7 - not done  (требуется слишком много памяти)
+
+25.06.2021
+проверить другие loss0+10*loss1 - done  SZ640_EFNB5_MASK_0FOLD_WLOSS10 - улучшений нет
+проверить другую форму маски - (не 0/255, а непосредственно изображние затенностей) done SZ640_EFNB5_MASK2_0FOLD_WLOSS4  - улучшений нет
+проверить densenet201 + mixup - done local validation 0.363 SZ640_D201_MASK_0FOLD_WL4_MIXUP_CUTMIX/fold0-fine5
+
+24.06.2021
+
+сделать полноценный ноутбук которые дает ps 0.608 (https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66511973) и считает все предикты, в т.ч. на hidden data set - done ps 0.609 https://www.kaggle.com/andreyzotov/big-ensemble-0609?scriptVersionId=67000655
+
+ансамбль np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*np_local_600_b5_5f*np_local_640_b5_5f*np_local_5f_512_efnb4
+
+компоненты
+1. np_local_0598 - паблик https://www.kaggle.com/h053473666/siim-cov19-efnb7-yolov5-infer fast_sub = False
+2. np_local_0440 - паблик https://www.kaggle.com/vidhenchauhan/covid-19-2-para
+3. np_local_0397 - мой эксперимент the_first:
+                 submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine/valid/remote-00012000_model
+                initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine/checkpoint/00012000_model.pth
+                
+4.np_local_hsub - расчитанное хенгом решение на базе 2 фолдов (512x512 efb3). модели можно найти по логу
+submit_dir : ['/root/share1/kaggle/2021/siim-covid-19/result/try-delivery/effb3-full-512-mask/fold0-fine/valid/remote-00008600_model', 
+              '/root/share1/kaggle/2021/siim-covid-19/result/try-delivery/effb3-full-512-mask/fold1-fine/valid/remote-00008400_model'] (его CV заметно выше, чем у меня - нужно разобраться почему - причина найдена, обучение Хенг делает в два этапа, сначала с lr=0.001, потом lr=0.0001 начиная с лучшей модели по CV).
+              
+5. np_local_5f - мой эксперимент SZ256_EFB3A_MASK_5FOLDS
+6. np_local_600_b5_5f - мой эксперимент SZ600_EFNB5_MASK_5FOLDS
+7. np_local_640_b5_5f - мой эксперимент SZ640_EFNB5_MASK_5FOLDS
+8. np_local_640_b5_5ff SZ640_EFNB5_MASK_5FOLD_FINE
+9. np_local_5f_512_efnb4 - мой эксперимент SZ512_EFNB4_MASK_5FOLDS
+              
+              
+
+20.06.2021
+
+запустить пайплайн на датасете 256 и расчитать модель efb3 на 5-ти фолдах - done PS 0.431 only study
+
+запустить пайплайн на датасете 512 и расчитать модель efb4 на 5-ти фолдах - done PS 0.433 only study
+
+запустить пайплайн на датасете 600 и расчитать модель efb5 на 5-ти фолдах - done PS 0.436 only study
+
+запустить пайплайн на датасете 640 и расчитать модель efb5 на 5-ти фолдах - done PS 0.438 only study
+
+запустить пайплайн на датасете 640 и расчитать модель efb5 на 5-ти фолдах with fine tunning - done PS 0.446 only study
+
+проверить loss = loss1+4*loss2 - done обучение улучшилось 0й фолд CV 0.392 уже на второй волне lr=0.0001. на 3й волне lr=0.00001 CV 0.395
+
+проверить lr/10 на одном фолде после 5 эпох - done (смысла нет в уменьшении lr)
+
+
+19.06.2021
+
+Сделать набор масок для пайплайна heng. - done
+Пересчитать модель с масками. - done

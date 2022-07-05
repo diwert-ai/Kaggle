@@ -1,0 +1,422 @@
+
+--- [START 2021-08-07_14-36-29] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1628346994
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_MLP_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_MLP_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 4
+   experiment = ['SZ640_MLP_TEST']
+                             |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate  plateau   iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+--------------------------------------------------------------------------------------------------
+
+--- [START 2021-08-07_14-36-29] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1628346994
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_MLP_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_MLP_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 4
+   experiment = ['SZ640_MLP_TEST']
+                             |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate  plateau   iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+--------------------------------------------------------------------------------------------------
+0.00100  1       0.000  0.00  | 1.403  0.176  0.193  0.484  | 0.000  0.000  0.000  |  0 hr 01 min
+
+--- [START 2021-08-07_14-36-29] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1628346994
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_MLP_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_MLP_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['SZ640_MLP_TEST']
+                             |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate  plateau   iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+--------------------------------------------------------------------------------------------------
+0.00100  1       0.000  0.00  | 1.391  0.186  0.454  0.630  | 0.000  0.000  0.000  |  0 hr 01 min
+
+--- [START 2021-08-07_14-46-00] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1628347565
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_MLP_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_MLP_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 6
+   experiment = ['SZ640_MLP_TEST']
+                             |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate  plateau   iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+--------------------------------------------------------------------------------------------------
+
+--- [START 2021-08-07_14-46-00] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1628347565
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_MLP_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_MLP_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 6
+   experiment = ['SZ640_MLP_TEST']
+                             |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate  plateau   iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+--------------------------------------------------------------------------------------------------
+
+--- [START 2021-08-07_14-46-00] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1628347565
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_MLP_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_MLP_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 6
+   experiment = ['SZ640_MLP_TEST']
+                             |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate  plateau   iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+--------------------------------------------------------------------------------------------------
+
+--- [START 2021-08-07_14-46-00] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1628347565
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_MLP_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_MLP_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 6
+   experiment = ['SZ640_MLP_TEST']
+                             |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate  plateau   iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+--------------------------------------------------------------------------------------------------
+0.00100  1       0.000  0.00  | 1.450  0.163  0.088  0.543  | 0.000  0.000  0.000  |  0 hr 01 min
+0.00100  2       0.020  0.24  | 1.224  0.187  0.474  0.749  | 1.237  1.237  2.473  |  0 hr 06 min
+0.00100  3       0.040  0.48  | 1.236  0.172  0.474  0.749  | 1.193  1.193  2.386  |  0 hr 10 min
+0.00100  4       0.060  0.72  | 1.214  0.167  0.474  0.749  | 1.227  1.227  2.455  |  0 hr 15 min
+0.00100  5       0.080  0.96  | 1.219  0.191  0.474  0.749  | 1.216  1.216  2.431  |  0 hr 19 min
+0.00100  6       0.100  1.20  | 1.210  0.192  0.474  0.749  | 1.256  1.256  2.512  |  0 hr 23 min
+0.00100  7       0.120  1.45  | 1.213  0.203  0.474  0.749  | 1.185  1.185  2.369  |  0 hr 28 min
+0.00100  8       0.140  1.69  | 1.207  0.208  0.474  0.749  | 1.188  1.188  2.377  |  0 hr 32 min
+0.00100  9       0.160  1.93  | 1.179  0.219  0.485  0.752  | 1.228  1.228  2.456  |  0 hr 37 min
+0.00100  10      0.180  2.17  | 1.178  0.219  0.496  0.753  | 1.198  1.198  2.395  |  0 hr 41 min
+0.00100  11      0.200  2.41  | 1.211  0.214  0.464  0.748  | 1.243  1.243  2.486  |  0 hr 45 min
+0.00100  12      0.220  2.65  | 1.177  0.214  0.510  0.749  | 1.171  1.171  2.342  |  0 hr 50 min
+0.00100  13      0.240  2.89  | 1.182  0.206  0.508  0.760  | 1.165  1.165  2.329  |  0 hr 54 min
+0.00100  14      0.260  3.13  | 1.160  0.221  0.520  0.753  | 1.183  1.183  2.366  |  0 hr 59 min
+0.00100  15      0.280  3.37  | 1.194  0.217  0.499  0.749  | 1.237  1.237  2.474  |  1 hr 03 min
+0.00100  16      0.300  3.61  | 1.176  0.217  0.518  0.755  | 1.172  1.172  2.345  |  1 hr 08 min
+0.00100  17      0.320  3.86  | 1.167  0.218  0.517  0.755  | 1.187  1.187  2.375  |  1 hr 12 min
+0.00100  18      0.340  4.10  | 1.157  0.216  0.528  0.772  | 1.135  1.135  2.271  |  1 hr 16 min
+0.00100  19      0.360  4.34  | 1.166  0.215  0.516  0.755  | 1.198  1.198  2.395  |  1 hr 21 min
+0.00100  20      0.380  4.58  | 1.169  0.225  0.520  0.750  | 1.226  1.226  2.453  |  1 hr 25 min
+0.00100  21      0.400  4.82  | 1.160  0.218  0.521  0.767  | 1.199  1.199  2.398  |  1 hr 30 min

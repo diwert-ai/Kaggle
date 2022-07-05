@@ -1,0 +1,316 @@
+21.07.2021
+Значимые сабмиты
+1. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67182226 PS 0.437
+fold 1 fold1-fine1 640 loss=l0+4*l1 CV 0.394 
+SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold1-fine1
+
+2. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67182515 PS 0.611
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*\
+              np_local_600_b5_5f*np_local_640_b5_5f*np_local_640_b5_0fwl395*np_local_5f_512_efnb4*np_local_640_b5_1fwl394
+
+к 0.612 добавлен сабмит из п. 1
+
+3.https://www.kaggle.com/andreyzotov/submission/data?scriptVersionId=67184260 PS  0.447
+SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold0-fine1/valid/remote-nt/best_model0+
+SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold1-fine1/valid/remote-int/best_model
+
+4.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67200112 PS 0.449
+SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold0-fine1/valid/remote/
+SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold1-fine1/valid/remote/
+SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold2-fine1/valid/remote/
+SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold3-fine1/valid/remote/
+SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold4-fine1/valid/remote/
+
+5.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67241530 PS 0.611
+np_local_640_b5_5fwl - компонента из п.4
+
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*\
+              np_local_600_b5_5f*np_local_640_b5_5f*np_local_640_b5_0fwl395*np_local_5f_512_efnb4*np_local_640_b5_5fwl
+
+6.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67777737 PS 0.408
+local validation 0.363
+SZ640_D201_MASK_0FOLD_WL4_MIXUP_CUTMIX/fold0-fine5
+
+7.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67777861 PS 0.609
+
+0612 + п6 (D201 f0)
+
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*\
+              np_local_600_b5_5f*np_local_640_b5_5f*np_local_640_b5_0fwl395*np_local_5f_512_efnb4*\
+              np_local_640_d2_0363
+
+8. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67778106 PS 0.586
+0612 + 0.1 * п6
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*\
+              np_local_600_b5_5f*np_local_640_b5_5f*np_local_640_b5_0fwl395*np_local_5f_512_efnb4+\
+              0.1*np_local_640_d2_0363
+              
+9.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67807894 PS 0.611
+0612 * np_local_640_b5_0386
+
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*\
+              np_local_600_b5_5f*np_local_640_b5_5f*np_local_640_b5_0fwl395*np_local_5f_512_efnb4*np_local_640_b5_0386
+              
+np_local_640_b5_0386:
+SZ640_EFNB5_MASK_0FOLD_WL4_MIXUP_CUTMIX/fold0-fine2/checkpoint/best_model.pth
+
+10. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68095591 PS 0.472
+study 0.612 + image yolo test (copy_image_part(df_local_mean,df_local_yolo_test))- без none компоненты
+
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*\
+              np_local_600_b5_5f*np_local_640_b5_5f*np_local_640_b5_0fwl395*np_local_5f_512_efnb4
+              
+df_local_yolo_test:  yolov5m.yaml (mid - 2я модель по размеру из 4х) 
+SZ640_YOLO_TEST/fold0/checkpoint/00038000_model.pth
+[0.048  0.175] - val loss 
+
+11. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68120383 PS 0.482
+study 0.612 + hengck yolo baseline (yolov5m)
+
+copy_image_part(df_local_mean,df_local_hyolo)
+
+df_local_hyolo  - csv hengck yolo baseline [0.047  0.170] - val loss
+
+12. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68156089 PS 0.606
+study 0.612 + image&none 0598 (yolov5x) + image df_local_hyolo
+
+13. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68200111 PS 0.398
+study 0.612 + image df_local_yolo_ayuraj без none компоненты
+
+ df_local_yolo_ayuraj - SZ640_YOLO_AYURAJ_TEST
+ val/box_loss 0.04627 
+ yolo5s 640 
+
+14. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68237252 PS 0.485
+study&image 0.612 без none компонененты
+
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*\
+              np_local_600_b5_5f*np_local_640_b5_5f*np_local_640_b5_0fwl395*np_local_5f_512_efnb4
+del_none_image_tail(df_local_mean)
+
+15. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68524033 0.606
+study 0.612 + image 0.598 + none none_image.csv
+
+none_image.csv: SZ640_2CLASS_TEST/fold0-3/checkpoint/best_model.pth
+
+16. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68525651 0.611
+study&image&none 0.612 + none none_image.csv (среднее арифметическое - геометрическое дает тот же результат)
+
+17.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68606852 0.612
+   https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68607269 0.612
+
+
+study&image&none 0.612 + 5f 640 none 05/01 ohem
+
+5f 640 none 05/01 ohem: 
+[SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold0/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold2/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold3/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold4/valid/remote/']
+
+[0.794,0.806,0.799,0.750,0.792]-val map (0.7876 среднее)
+
+18. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68608332 0.606
+study 0612+hyolo image + none 5f 640 ohem
+
+19.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68608638 0.609
+study 0612 + image 0598 + none 640 5f ohem
+
+20. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=68689885 0.607
+study 0612+image 0598 + none 5f 640
+
+none 5f 640
+['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS/fold0/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS/fold1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS/fold2/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS/fold3/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS/fold4/valid/remote/']
+[0.801,0.806,0.792,0.775,0.797] - val map (0.7942  среднее)
+
+
+
+
+30.06.2021
+Значимые сабмиты
+
+1. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66728295 PS 0.609 
+0598*0440*0397*hsub*5f*600_b5_5f*640_b5_5f*640_b5_5ff*512_b4_5f
+
+2.https://www.kaggle.com/andreyzotov/big-ensemble-0609?scriptVersionId=67000655 PS 0.609
+BIG ENSEMBLE 0609
+
+3.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67112321 PS 0.45
+fold 0 fold0-fine2 640 loss=l0+4*l1 CV 0.395 
+SZ640_EFNB5_MASK_0FOLD_WLOSS/fold0-fine2
+
+4. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=67112787 PS 0.612 (max)
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*\
+              np_local_600_b5_5f*np_local_640_b5_5f*np_local_640_b5_0fwl395*np_local_5f_512_efnb4
+
+25.06.2021
+Значимые сабмиты
+
+1. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66596064 PS 0.446
+[5 folds][640][only study][efb5][fine tunning lr_set[0.001,0.0001,0.00001]]
+
+2. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66596628 PS 0.608 (максиму на тек. момент)
+0598*0440*0397*hsub*256_b3_5f*512_b4_5f*600_b5_5f*640_b5_5ff
+
+
+
+24.06.2021
+Значимые сабмиты
+1. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66399178 PS 0.433
+[5 folds][512][only study][efb4]
+
+2. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66510823 PS 0.436
+[5 folds][600][only study][efb5]
+
+3. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66511243 PS 0.438
+[5 folds][640][only study][efb5]
+
+4. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66511973 PS 0.608  (максимум на текущий момент)
+ансамбль np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f*np_local_600_b5_5f*np_local_640_b5_5f*np_local_5f_512_efnb4
+
+
+22.06.2021
+Значимые сабмиты
+
+1. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66242386 PS 0.431
+5 фолдов [256][only study][efb3]
+
+2.https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66242534 PS 0.606
+np_local_mean=np_local_0598*np_local_0440*np_local_0397*np_local_hsub*np_local_5f
+
+3. https://www.kaggle.com/andreyzotov/submission?scriptVersionId=66391794 PS 0.432
+0й фолд [512][only study][efb4] CV 0.367
+
+
+
+
+21.06.2021
+
+fold0 0.400*   0.362
+fold1 0.360*   0.372
+fold2 0.680*   0.362
+fold3 0.300*   0.363
+fold4 0.380*   0.362
+
+20.06.2021
+
+Значимые эксперименты\сабмиты.
+
+1. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66112555 PS 0.595
+
+Усреднение np_local_mean=np_local_0598*np_local_0440 PS 0.595
+
+2. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66166556 PS 0.4
+
+Сгенерированы маски 256x256 - скрипт тут https://www.kaggle.com/andreyzotov/siim-covid-19-convert-to-jpg-512px-mask?scriptVersionId=66156791
+
+Используя маски запущен пайплайн хенга и получен результат: https://drive.google.com/drive/u/0/folders/1yyIIDlsHeuHV5k0nUHPf2UNg9FdEHH5h
+
+в данном сабмите использована модель 00012000_model.pth с local validation map 0.329
+
+3. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66167144 PS 0.416
+
+в данном сабмите испльзована модель 00002600_model.pth из того что эксперимента что и в п.2 с максимальным значением 
+local validation map 0.364
+
+4.https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66167507 PS 0.6
+
+ансамбль np_local_mean=np_local_0598*np_local_0440*np_local_0416
+
+5. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66168051 PS 0.605
+
+ансамбль np_local_mean=np_local_0598*np_local_0440*np_local_0416*np_local_0397*np_local_hsub
+
+np_local_hsub - расчитанное хенгом решение на базе 2 фолдов (512x512 efb3)
+
+максимальный PS на данный момент - 28 место на LB.
+
+6. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66168207 PS 0.603
+
+анасамбль  np_local_mean=np_local_0598*np_local_0440*np_local_hsub
+
+7. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66219823 0.604
+
+ансамбль np_local_mean=np_local_0598*np_local_0440*np_local_0416*np_local_hsub
+
+8. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66220412 0.602
+
+ансамбль np_local_mean=np_local_0598*np_local_0440*np_local_0416*np_local_hsub*np_local_0397*np_local_0400
+
+18.06.2021
+
+
+Задача распознования делится на две отдельных подзадачи - study-level и image-level.
+Отсюда два уровня разметки данных:
+
+1. Study-level разметка
+Изображения (studies) в тесте могут иметь более чем одну разметку. Их всего 4: "negative", "typical", "indeterminate", "atypical". Для каждого  изображения в тесте (раздел study), нужно предсказать как минимум одну из этих 4. 
+Формат предсказания следующий: [class ID] [confidence score] [минимальный bbox 0 0 1 1]. Пример:
+negative 0.79 0 0 1 1 typical 0.06 0 0 1 1 indeterminate 0.12 0 0 1 1 atypical 0.01 0 0 1 1
+
+
+2. Image-level разметка
+Каждое изображение в тесте (раздел image) может иметь более одного объекта затенности (opacity) для распознования. Для каждого объекта на изображении нужно предсказать наличие затенности (opacity), оценку (a confidence score), и ограничевающую рамку xmin ymin xmax ymax (and bounding box in format xmin ymin xmax ymax). Если предсказание заключается в том, что затенность отсутствует на всем изображение, то такое предсказание записывается в формате none 1.0 0 0 1 1 (none is the class ID for "No finding"; 1.0 is the confidence, and 0 0 1 1 is a one-pixel bounding box)  
+
+Submission File
+The submission file should contain a header and have the following format:
+
+Id,PredictionString
+2b95d54e4be65_study,negative 1 0 0 1 1
+2b95d54e4be66_study,typical 1 0 0 1 1
+2b95d54e4be67_study,indeterminate 1 0 0 1 1 atypical 1 0 0 1 1
+2b95d54e4be68_image,none 1 0 0 1 1
+2b95d54e4be69_image,opacity 0.5 100 100 200 200 opacity 0.7 10 10 20 20
+etc.
+
+Набор данных train включает 6334 сканирования грудной клетки в формате DICOM, которые были обезличены для защиты конфиденциальности пациентов. Все изображения были размечены группой опытных радиологов на предмет наличия затенений, а также общего внешнего вида.
+
+Обратите внимание, что все изображения хранятся в путях вида study_id/series_id/image_id. Study ID здесь относится непосредственно к предсказаниям вида study-level, а Image ID  используется для предсказаний image-level (см. описания выше).
+Для одного study_id может быть несколько image_id.
+
+Набор скрытых тестовых данных (hidden test) имеет примерно такой же масштаб, что и набор обучающих данных.
+
+Файлы csv:
+train_study_level.csv - метаданные для train (study-level задача), с одной строкой для каждого study изображения включающей верную разметку (ground truth).
+train_image_level.csv - метаданные для train (image-level задача), с одной строкой для каждого image, включая корректную разметку (ground truth) и набор bbox'ов в формате словаря. Некоторые изображения image как в наборе test так и в наборе train имеют несколько bbox'ов.
+sample_submission.csv - файл со всеми результами предсказаний и image- и study-level задачами.
+
+Колонки
+train_study_level.csv
+id - уникальный индентификатор study изображения
+Negative for Pneumonia - 1 если  на study изображении пневмония не найдена, 0 в противном случае
+Typical Appearance - 1 если на study изображении типичный вид пневмонии,  0 в противном случае
+Indeterminate Appearance  - 1  если на study изображении неопределенный вид пневмонии, 0 в противном случае
+Atypical Appearance  - 1 если на study изображении атипичный вид пневмонии,  0 в противном случае
+
+
+train_image_level.csv
+id - уникальный индентификатор image изображения
+boxes - bbox'ы в понятно читаемом словарном формате
+label - верная разметка (ground truth) для каждого bbox'а
+
+
+Значимые Эксперименты.
+1.  https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66033836  Public Score 0.44
+
+результат (sample_submission.csv) ноутбука https://www.kaggle.com/vidhenchauhan/covid-19-2-para
+использован как предвычисленные предсказания для публичного теста и обработаны с помощью кода описанного
+тут https://www.kaggle.com/c/siim-covid19-detection/discussion/246908#1354120 . при этом на скрытых тестовых данных никаких предсказаний не вычисляется, т.е. имеет значение только public score. private score судя по всему 0. для расчета private score необходима имплементация ноутбука читающая данные из test'а и делающая вычисления предсказаний с помощью модели в упомянутом ноутбуке covid-19-2-para
+
+2. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66034219 PS 0.397
+
+предвычисленный submission для study-level задачи получен с помощью пайплайна hengck23 *, который развернут мной на google colab https://colab.research.google.com/drive/11qCEgqshsIilyZNW1uZ2O1I2rzvYqR9G 
+лог вычислений log.train.txt хранится тут: https://drive.google.com/drive/u/0/folders/1L3Q4OwAGnegYfVL1LBxGPpPd1pfhtA6w 
+
+* пайплайн анонсирован тут https://www.kaggle.com/c/siim-covid19-detection/discussion/240233 там же есть ссылка на архив с исходным кодом.
+
+3. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66036678 PS 0.598
+
+предвычисленный submission для study и image задач взят отсюда https://www.kaggle.com/h053473666/siim-cov19-efnb7-yolov5-infer
+(сделана копия ноутбука которая вычислена с параметром  fast_sub = False).
+
+public score study задачи - 0.432 (проверено в эскперименте https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66112431)
+
+4. https://www.kaggle.com/andreyzotov/submission-1?scriptVersionId=66044998 PS 0.603 
+
+23 результат на лидерборде.
+
+study компоненты 1,2,3 экспериментов перемножены (поэлементно) 
+image компонента взята из 3 го эксперимента.

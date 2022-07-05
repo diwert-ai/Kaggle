@@ -1,0 +1,45 @@
+
+--- [START 2021-06-25_10-15-08] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1624616115
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 8)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+probability (1263, 4) 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold4-fine2/valid/remote-00010400_model
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold4-fine2/checkpoint/00010400_model.pth
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.838553 0 0 1 1 typical 0.039350 0 0...
+1     004bd59708be_study  negative 0.000957 0 0 1 1 typical 0.877845 0 0...
+2     00508faccd39_study  negative 0.704314 0 0 1 1 typical 0.083152 0 0...
+3     006486aa80b2_study  negative 0.612316 0 0 1 1 typical 0.154672 0 0...
+4     00655178fdfc_study  negative 0.639137 0 0 1 1 typical 0.109732 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.298564 0 0 1 1 typical 0.340826 0 0...
+1210  ff2cc4de58c5_study  negative 0.225214 0 0 1 1 typical 0.219663 0 0...
+1211  ff2f0a744930_study  negative 0.000656 0 0 1 1 typical 0.865699 0 0...
+1212  ff88940dce8b_study  negative 0.549022 0 0 1 1 typical 0.206161 0 0...
+1213  fff7ef24961f_study  negative 0.042735 0 0 1 1 typical 0.807362 0 0...
+
+[1214 rows x 2 columns]
+

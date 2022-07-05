@@ -1,0 +1,45 @@
+
+--- [START 2021-07-21_10-43-46] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1626864238
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 8)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 01 min 
+probability (1263,) 
+none_image_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS/fold3/valid/remote
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS/fold3/checkpoint/best_model.pth
+df_none_image : (1263, 2)
+                      id      none
+0     c34113e0228a_image  0.040368
+1     539931eced05_image  0.059535
+2     53c971120ab1_image  0.136901
+3     3dcdfc352a06_image  0.650382
+4     59a0fc64bd20_image  0.183317
+...                  ...       ...
+1258  83594e6ad0ba_image  0.995966
+1259  eebfaa5e1a65_image  0.144144
+1260  5a73ab51749e_image  0.521143
+1261  8ad2e769d2b0_image  0.531206
+1262  88b9ca325a4c_image  0.058435
+
+[1263 rows x 2 columns]
+

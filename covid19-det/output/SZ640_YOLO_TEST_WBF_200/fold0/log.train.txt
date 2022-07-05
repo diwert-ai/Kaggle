@@ -1,0 +1,224 @@
+
+--- [START 2021-07-29_06-37-30] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627540656
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	__file__ = SZ640_YOLO_TEST_WBF_200
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST_WBF_200/fold0
+
+df_fold_file  : df_fold_rand830.csv
+train_dataset : 
+	len = 4980
+	df  = (4980, 12)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 12)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  Lookahead (
+Parameter Group 0
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    step_counter: 0
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 16
+   experiment = SZ640_YOLO_TEST_WBF_200
+                           |-------VALID ----------------|---- TRAIN/BATCH --------------
+rate    plt    iter  epoch | map    map/6  loss1  loss2  | loss1  loss2  | time          
+-----------------------------------------------------------------------------------------
+0.00100  1    0.000  0.00  | 0.000  0.000  0.105  40.737  | 0.000  0.000  |  0 hr 01 min
+0.00100  2    0.050  1.61  | 0.000  0.000  0.052  0.211  | 0.052  0.224  |  0 hr 09 min
+0.00100  3    0.100  3.22  | 0.000  0.000  0.053  0.188  | 0.054  0.173  |  0 hr 17 min
+
+--- [START 2021-07-29_09-38-10] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627551496
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	__file__ = SZ640_YOLO_TEST_WBF_200
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST_WBF_200/fold0
+
+df_fold_file  : df_fold_rand830.csv
+train_dataset : 
+	len = 4980
+	df  = (4980, 12)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 12)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  Lookahead (
+Parameter Group 0
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    step_counter: 0
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 16
+   experiment = SZ640_YOLO_TEST_WBF_200
+                           |-------VALID ----------------|---- TRAIN/BATCH --------------
+rate    plt    iter  epoch | map    map/6  loss1  loss2  | loss1  loss2  | time          
+-----------------------------------------------------------------------------------------
+
+--- [START 2021-07-29_09-38-10] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627551496
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	__file__ = SZ640_YOLO_TEST_WBF_200
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST_WBF_200/fold0
+
+df_fold_file  : df_fold_rand830.csv
+train_dataset : 
+	len = 4980
+	df  = (4980, 12)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 12)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  Lookahead (
+Parameter Group 0
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    step_counter: 0
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 16
+   experiment = SZ640_YOLO_TEST_WBF_200
+                           |-------VALID ----------------|---- TRAIN/BATCH --------------
+rate    plt    iter  epoch | map    map/6  loss1  loss2  | loss1  loss2  | time          
+-----------------------------------------------------------------------------------------
+0.00100  1    0.000  0.00  | 0.000  0.000  0.095  50.661  | 0.000  0.000  |  0 hr 01 min
+0.00100  2    0.050  1.61  | 0.088  0.015  0.052  0.224  | 0.056  0.220  |  0 hr 09 min
+0.00100  0    0.100* 3.22  | 0.312  0.052  0.051  0.176  | 0.052  0.175  |  0 hr 17 min
+0.00100  0    0.150* 4.82  | 0.426  0.071  0.050  0.178  | 0.050  0.167  |  0 hr 26 min
+0.00100  1    0.200  6.43  | 0.400  0.067  0.049  0.175  | 0.049  0.163  |  0 hr 34 min
+0.00100  2    0.250  8.04  | 0.407  0.068  0.050  0.170  | 0.050  0.166  |  0 hr 43 min
+0.00100  3    0.300  9.65  | 0.362  0.060  0.050  0.166  | 0.050  0.161  |  0 hr 51 min
+0.00100  4    0.350  11.25  | 0.349  0.058  0.049  0.174  | 0.048  0.161  |  0 hr 59 min
+0.00100  5    0.400  12.86  | 0.366  0.061  0.049  0.181  | 0.051  0.163  |  1 hr 08 min
+0.00100  6    0.450  14.47  | 0.365  0.061  0.050  0.177  | 0.047  0.160  |  1 hr 16 min
+0.00100  7    0.500  16.08  | 0.373  0.062  0.048  0.176  | 0.048  0.158  |  1 hr 24 min
+0.00100  8    0.550  17.68  | 0.417  0.070  0.048  0.173  | 0.048  0.159  |  1 hr 33 min
+0.00100  9    0.600  19.29  | 0.276  0.046  0.051  0.169  | 0.049  0.165  |  1 hr 41 min
+0.00100  10   0.650  20.90  | 0.370  0.062  0.049  0.172  | 0.047  0.158  |  1 hr 49 min
+0.00100  11   0.700  22.51  | 0.408  0.068  0.049  0.165  | 0.048  0.166  |  1 hr 58 min
+0.00010  1    0.150* 4.82  | 0.426  0.071  0.050  0.178  | 0.048  0.166  |  1 hr 59 min
+0.00010  0    0.200* 6.43  | 0.463  0.077  0.047  0.173  | 0.048  0.164  |  2 hr 07 min
+0.00010  1    0.250  8.04  | 0.452  0.075  0.046  0.172  | 0.046  0.159  |  2 hr 15 min
+0.00010  2    0.300  9.65  | 0.378  0.063  0.047  0.184  | 0.047  0.160  |  2 hr 24 min
+0.00010  3    0.350  11.25  | 0.440  0.073  0.047  0.172  | 0.045  0.161  |  2 hr 32 min
+0.00010  4    0.400  12.86  | 0.408  0.068  0.047  0.170  | 0.047  0.163  |  2 hr 41 min
+0.00010  5    0.450  14.47  | 0.419  0.070  0.046  0.172  | 0.047  0.155  |  2 hr 49 min
+0.00010  6    0.500  16.08  | 0.439  0.073  0.047  0.173  | 0.044  0.158  |  2 hr 57 min
+0.00010  7    0.550  17.68  | 0.435  0.073  0.047  0.175  | 0.045  0.159  |  3 hr 06 min
+0.00010  8    0.600  19.29  | 0.444  0.074  0.047  0.178  | 0.044  0.157  |  3 hr 14 min
+0.00010  9    0.650  20.90  | 0.444  0.074  0.047  0.177  | 0.043  0.155  |  3 hr 23 min
+0.00010  10   0.700  22.51  | 0.450  0.075  0.048  0.180  | 0.043  0.159  |  3 hr 31 min
+0.00010  11   0.750  24.12  | 0.370  0.062  0.048  0.180  | 0.042  0.152  |  3 hr 40 min
+0.00001  1    0.200* 6.43  | 0.463  0.077  0.047  0.173  | 0.042  0.152  |  3 hr 41 min
+0.00001  2    0.250  8.04  | 0.441  0.073  0.046  0.179  | 0.046  0.162  |  3 hr 49 min
+0.00001  3    0.300  9.65  | 0.450  0.075  0.046  0.175  | 0.046  0.171  |  3 hr 58 min
+0.00001  0    0.350* 11.25  | 0.465  0.077  0.046  0.173  | 0.045  0.162  |  4 hr 06 min
+0.00001  1    0.400  12.86  | 0.442  0.074  0.046  0.171  | 0.047  0.161  |  4 hr 15 min
+0.00001  2    0.450  14.47  | 0.440  0.073  0.046  0.171  | 0.046  0.160  |  4 hr 23 min
+0.00001  3    0.500  16.08  | 0.442  0.074  0.046  0.171  | 0.045  0.167  |  4 hr 32 min
+0.00001  4    0.550  17.68  | 0.428  0.071  0.046  0.171  | 0.045  0.158  |  4 hr 40 min
+0.00001  5    0.600  19.29  | 0.432  0.072  0.046  0.171  | 0.046  0.160  |  4 hr 49 min
+0.00001  6    0.650  20.90  | 0.453  0.075  0.046  0.171  | 0.045  0.159  |  4 hr 57 min
+0.00001  7    0.700  22.51  | 0.437  0.073  0.046  0.172  | 0.045  0.156  |  5 hr 06 min
+0.00001  8    0.750  24.12  | 0.447  0.075  0.046  0.172  | 0.046  0.161  |  5 hr 14 min
+0.00001  9    0.800  25.72  | 0.439  0.073  0.046  0.172  | 0.047  0.158  |  5 hr 23 min
+0.00001  10   0.850  27.33  | 0.431  0.072  0.046  0.173  | 0.046  0.160  |  5 hr 32 min
+0.00001  11   0.900  28.94  | 0.459  0.077  0.046  0.172  | 0.043  0.161  |  5 hr 40 min
+

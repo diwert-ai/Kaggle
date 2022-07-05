@@ -1,0 +1,378 @@
+
+--- [START 2021-06-14_20-34-05] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1623702852
+		torch.__version__              = 1.8.1+cu101
+		torch.version.cuda             = 10.1
+		torch.backends.cudnn.version() = 7603
+		os['CUDA_VISIBLE_DEVICES']     = None
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P4', major=6, minor=1, total_memory=7611MB, multi_processor_count=20)
+
+
+
+--- [START 2021-06-14_20-34-05] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1623702852
+		torch.__version__              = 1.8.1+cu101
+		torch.version.cuda             = 10.1
+		torch.backends.cudnn.version() = 7603
+		os['CUDA_VISIBLE_DEVICES']     = None
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P4', major=6, minor=1, total_memory=7611MB, multi_processor_count=20)
+
+
+	__file__ = the_first
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine
+
+
+--- [START 2021-06-14_21-33-42] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1623706428
+		torch.__version__              = 1.8.1+cu101
+		torch.version.cuda             = 10.1
+		torch.backends.cudnn.version() = 7603
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla T4', major=7, minor=5, total_memory=15109MB, multi_processor_count=40)
+
+
+	__file__ = the_first
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine
+
+
+--- [START 2021-06-14_21-41-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1623706919
+		torch.__version__              = 1.8.1+cu101
+		torch.version.cuda             = 10.1
+		torch.backends.cudnn.version() = 7603
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla T4', major=7, minor=5, total_memory=15109MB, multi_processor_count=40)
+
+
+	__file__ = the_first
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   862 (0.1731)
+		 3        Atypical Appearance:   385 (0.0773)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   220 (0.1764)
+		 3        Atypical Appearance:    93 (0.0746)
+
+
+** net setting **
+
+--- [START 2021-06-14_21-41-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1623706919
+		torch.__version__              = 1.8.1+cu101
+		torch.version.cuda             = 10.1
+		torch.backends.cudnn.version() = 7603
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla T4', major=7, minor=5, total_memory=15109MB, multi_processor_count=40)
+
+
+	__file__ = the_first
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   862 (0.1731)
+		 3        Atypical Appearance:   385 (0.0773)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   220 (0.1764)
+		 3        Atypical Appearance:    93 (0.0746)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.0001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 1
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['the_first']
+                      |----- VALID ---|---- TRAIN/BATCH --------------
+rate     iter   epoch | loss    map   | loss0  loss1  | time          
+----------------------------------------------------------------------
+
+--- [START 2021-06-14_21-41-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1623706919
+		torch.__version__              = 1.8.1+cu101
+		torch.version.cuda             = 10.1
+		torch.backends.cudnn.version() = 7603
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla T4', major=7, minor=5, total_memory=15109MB, multi_processor_count=40)
+
+
+	__file__ = the_first
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   862 (0.1731)
+		 3        Atypical Appearance:   385 (0.0773)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   220 (0.1764)
+		 3        Atypical Appearance:    93 (0.0746)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.0001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 1
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['the_first']
+                      |----- VALID ---|---- TRAIN/BATCH --------------
+rate     iter   epoch | loss    map   | loss0  loss1  | time          
+----------------------------------------------------------------------
+
+--- [START 2021-06-14_22-41-52] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1623710518
+		torch.__version__              = 1.8.1+cu101
+		torch.version.cuda             = 10.1
+		torch.backends.cudnn.version() = 7603
+		os['CUDA_VISIBLE_DEVICES']     = None
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla T4', major=7, minor=5, total_memory=15109MB, multi_processor_count=40)
+
+
+	__file__ = the_first
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   862 (0.1731)
+		 3        Atypical Appearance:   385 (0.0773)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   220 (0.1764)
+		 3        Atypical Appearance:    93 (0.0746)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.0001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 1
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['the_first']
+                      |----- VALID ---|---- TRAIN/BATCH --------------
+rate     iter   epoch | loss    map   | loss0  loss1  | time          
+----------------------------------------------------------------------
+0.00000  0.000* 0.00  | 1.339  0.178  0.099  0.395  | 0.000  0.000  0.000  |  0 hr 00 min
+
+--- [START 2021-06-14_22-41-52] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1623710518
+		torch.__version__              = 1.8.1+cu101
+		torch.version.cuda             = 10.1
+		torch.backends.cudnn.version() = 7603
+		os['CUDA_VISIBLE_DEVICES']     = None
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla T4', major=7, minor=5, total_memory=15109MB, multi_processor_count=40)
+
+
+	__file__ = the_first
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/the_first/fold1-fine
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   862 (0.1731)
+		 3        Atypical Appearance:   385 (0.0773)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   220 (0.1764)
+		 3        Atypical Appearance:    93 (0.0746)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.0001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 1
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['the_first']
+                      |----- VALID ---|---- TRAIN/BATCH --------------
+rate     iter   epoch | loss    map   | loss0  loss1  | time          
+----------------------------------------------------------------------
+0.00000  0.000* 0.00  | 1.400  0.163  0.246  0.531  | 0.000  0.000  0.000  |  0 hr 00 min
+0.00010  0.020* 0.32  | 1.044  0.312  0.146  0.326  | 1.092  0.565  0.000  |  0 hr 00 min
+0.00010  0.040* 0.64  | 0.993  0.305  0.157  0.354  | 1.016  0.563  0.000  |  0 hr 01 min
+0.00010  0.060* 0.96  | 0.987  0.297  0.167  0.377  | 1.042  0.557  0.000  |  0 hr 01 min
+0.00010  0.080* 1.29  | 0.940  0.336  0.246  0.431  | 1.034  0.554  0.000  |  0 hr 02 min
+0.00010  0.100* 1.61  | 1.059  0.320  0.132  0.310  | 1.024  0.552  0.000  |  0 hr 02 min
+0.00010  0.120* 1.93  | 0.958  0.333  0.147  0.419  | 1.018  0.549  0.000  |  0 hr 03 min
+0.00010  0.140* 2.25  | 0.950  0.327  0.156  0.381  | 0.945  0.556  0.000  |  0 hr 04 min
+0.00010  0.160* 2.57  | 0.988  0.339  0.131  0.341  | 0.953  0.547  0.000  |  0 hr 04 min
+0.00010  0.180* 2.89  | 0.916  0.350  0.174  0.362  | 0.983  0.550  0.000  |  0 hr 05 min
+0.00010  0.200* 3.22  | 0.916  0.356  0.143  0.391  | 0.973  0.544  0.000  |  0 hr 05 min
+0.00010  0.220* 3.54  | 0.899  0.354  0.249  0.435  | 0.977  0.547  0.000  |  0 hr 06 min
+0.00010  0.240* 3.86  | 0.903  0.361  0.225  0.376  | 0.937  0.545  0.000  |  0 hr 06 min
+0.00010  0.260* 4.18  | 0.914  0.353  0.155  0.402  | 0.914  0.549  0.000  |  0 hr 07 min
+0.00010  0.280* 4.50  | 0.926  0.358  0.184  0.386  | 0.910  0.545  0.000  |  0 hr 08 min
+0.00010  0.300* 4.82  | 0.957  0.357  0.200  0.458  | 0.911  0.550  0.000  |  0 hr 08 min
+0.00010  0.320* 5.14  | 0.892  0.359  0.167  0.415  | 0.898  0.538  0.000  |  0 hr 09 min
+0.00010  0.340* 5.47  | 0.921  0.357  0.175  0.364  | 0.889  0.545  0.000  |  0 hr 09 min
+0.00010  0.360* 5.79  | 0.939  0.356  0.135  0.346  | 0.959  0.549  0.000  |  0 hr 10 min
+0.00010  0.380* 6.11  | 0.916  0.360  0.166  0.417  | 0.913  0.543  0.000  |  0 hr 10 min
+0.00010  0.400* 6.43  | 0.986  0.346  0.240  0.501  | 0.917  0.541  0.000  |  0 hr 11 min
+0.00010  0.420* 6.75  | 0.946  0.352  0.182  0.392  | 0.904  0.543  0.000  |  0 hr 12 min
+0.00010  0.440* 7.07  | 0.903  0.354  0.160  0.413  | 0.874  0.538  0.000  |  0 hr 12 min
+0.00010  0.460* 7.40  | 0.922  0.355  0.180  0.373  | 0.836  0.543  0.000  |  0 hr 13 min
+0.00010  0.480* 7.72  | 0.960  0.358  0.240  0.432  | 0.890  0.544  0.000  |  0 hr 13 min
+0.00010  0.500* 8.04  | 0.960  0.350  0.256  0.448  | 0.856  0.546  0.000  |  0 hr 14 min
+0.00010  0.520* 8.36  | 0.958  0.356  0.183  0.386  | 0.863  0.543  0.000  |  0 hr 14 min
+0.00010  0.540* 8.68  | 0.950  0.349  0.196  0.434  | 0.854  0.543  0.000  |  0 hr 15 min
+0.00010  0.560* 9.00  | 0.985  0.358  0.114  0.392  | 0.837  0.539  0.000  |  0 hr 16 min
+0.00010  0.580* 9.32  | 0.994  0.359  0.170  0.389  | 0.818  0.540  0.000  |  0 hr 16 min
+0.00010  0.600* 9.65  | 0.944  0.354  0.233  0.455  | 0.858  0.542  0.000  |  0 hr 17 min
+0.00010  0.620* 9.97  | 0.945  0.360  0.202  0.419  | 0.871  0.542  0.000  |  0 hr 17 min
+0.00010  0.640* 10.29  | 0.981  0.346  0.178  0.420  | 0.829  0.543  0.000  |  0 hr 18 min
+0.00010  0.660* 10.61  | 0.943  0.347  0.154  0.401  | 0.816  0.544  0.000  |  0 hr 18 min
+0.00010  0.680* 10.93  | 0.979  0.361  0.209  0.431  | 0.798  0.540  0.000  |  0 hr 19 min
+0.00010  0.700* 11.25  | 0.950  0.352  0.210  0.444  | 0.799  0.541  0.000  |  0 hr 20 min
+0.00010  0.720* 11.58  | 0.994  0.334  0.189  0.439  | 0.814  0.539  0.000  |  0 hr 20 min
+0.00010  0.740* 11.90  | 1.067  0.332  0.195  0.404  | 0.798  0.541  0.000  |  0 hr 21 min
+0.00010  0.760* 12.22  | 0.980  0.346  0.177  0.446  | 0.814  0.546  0.000  |  0 hr 21 min
+0.00010  0.780* 12.54  | 1.034  0.329  0.164  0.425  | 0.794  0.542  0.000  |  0 hr 22 min
+0.00010  0.800* 12.86  | 1.018  0.340  0.150  0.424  | 0.756  0.540  0.000  |  0 hr 22 min
+0.00010  0.820* 13.18  | 1.040  0.347  0.206  0.448  | 0.758  0.543  0.000  |  0 hr 23 min
+0.00010  0.840* 13.50  | 1.211  0.327  0.168  0.451  | 0.787  0.538  0.000  |  0 hr 24 min
+0.00010  0.860* 13.83  | 1.028  0.343  0.206  0.428  | 0.755  0.539  0.000  |  0 hr 24 min
+0.00010  0.880* 14.15  | 1.061  0.340  0.180  0.411  | 0.706  0.539  0.000  |  0 hr 25 min
+0.00010  0.900* 14.47  | 1.104  0.330  0.166  0.425  | 0.733  0.542  0.000  |  0 hr 25 min
+0.00010  0.920* 14.79  | 1.005  0.344  0.167  0.411  | 0.767  0.537  0.000  |  0 hr 26 min
+0.00010  0.940* 15.11  | 1.089  0.343  0.172  0.403  | 0.711  0.542  0.000  |  0 hr 26 min
+0.00010  0.960* 15.43  | 1.188  0.324  0.192  0.427  | 0.699  0.535  0.000  |  0 hr 27 min
+0.00010  0.980* 15.76  | 1.008  0.336  0.196  0.415  | 0.789  0.540  0.000  |  0 hr 28 min
+0.00010  1.000* 16.08  | 1.127  0.327  0.182  0.440  | 0.705  0.543  0.000  |  0 hr 28 min
+0.00010  1.020* 16.40  | 1.160  0.321  0.192  0.447  | 0.622  0.535  0.000  |  0 hr 29 min
+0.00010  1.040* 16.72  | 1.048  0.330  0.195  0.432  | 0.733  0.537  0.000  |  0 hr 29 min
+0.00010  1.060* 17.04  | 1.108  0.331  0.216  0.412  | 0.765  0.540  0.000  |  0 hr 30 min
+0.00010  1.080* 17.36  | 1.112  0.329  0.176  0.424  | 0.636  0.542  0.000  |  0 hr 30 min
+0.00010  1.100* 17.68  | 1.093  0.336  0.143  0.415  | 0.642  0.540  0.000  |  0 hr 31 min
+0.00010  1.120* 18.01  | 1.201  0.328  0.160  0.441  | 0.709  0.539  0.000  |  0 hr 32 min
+0.00010  1.140* 18.33  | 1.182  0.323  0.205  0.431  | 0.615  0.537  0.000  |  0 hr 32 min
+0.00010  1.160* 18.65  | 1.182  0.331  0.176  0.416  | 0.653  0.541  0.000  |  0 hr 33 min
+0.00010  1.180* 18.97  | 1.173  0.328  0.184  0.455  | 0.702  0.541  0.000  |  0 hr 33 min
+0.00010  1.200* 19.29  | 1.336  0.323  0.183  0.373  | 0.550  0.541  0.000  |  0 hr 34 min
+0.00010  1.220  19.61  | 1.133  0.315  0.185  0.393  | 0.635  0.544  0.000  |  0 hr 34 min
+0.00010  1.240  19.94  | 1.118  0.330  0.188  0.407  | 0.736  0.540  0.000  |  0 hr 35 min
+

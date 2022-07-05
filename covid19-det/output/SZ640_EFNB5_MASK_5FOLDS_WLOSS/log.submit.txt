@@ -1,0 +1,173 @@
+
+--- [START 2021-07-01_09-17-38] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625131065
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+
+--- [START 2021-07-01_09-17-38] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625131065
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+
+--- [START 2021-07-01_09-17-38] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625131065
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+
+--- [START 2021-07-01_09-17-38] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625131065
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+submit_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold0-fine1/valid/remote-nt/best_model0', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold1-fine1/valid/remote-int/best_model']
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.802394 0 0 1 1 typical 0.285219 0 0...
+1     004bd59708be_study  negative 0.021885 0 0 1 1 typical 0.955850 0 0...
+2     00508faccd39_study  negative 0.743103 0 0 1 1 typical 0.354428 0 0...
+3     006486aa80b2_study  negative 0.513435 0 0 1 1 typical 0.539979 0 0...
+4     00655178fdfc_study  negative 0.712600 0 0 1 1 typical 0.387212 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.528496 0 0 1 1 typical 0.642093 0 0...
+1210  ff2cc4de58c5_study  negative 0.426499 0 0 1 1 typical 0.490181 0 0...
+1211  ff2f0a744930_study  negative 0.012947 0 0 1 1 typical 0.970831 0 0...
+1212  ff88940dce8b_study  negative 0.665776 0 0 1 1 typical 0.545548 0 0...
+1213  fff7ef24961f_study  negative 0.187611 0 0 1 1 typical 0.910528 0 0...
+
+[1214 rows x 2 columns]
+
+
+--- [START 2021-07-01_09-17-38] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625131065
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+submit_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold0-fine1/valid/remote-nt/best_model0', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold1-fine1/valid/remote-int/best_model']
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.802394 0 0 1 1 typical 0.285219 0 0...
+1     004bd59708be_study  negative 0.021885 0 0 1 1 typical 0.955850 0 0...
+2     00508faccd39_study  negative 0.743103 0 0 1 1 typical 0.354428 0 0...
+3     006486aa80b2_study  negative 0.513435 0 0 1 1 typical 0.539979 0 0...
+4     00655178fdfc_study  negative 0.712600 0 0 1 1 typical 0.387212 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.528496 0 0 1 1 typical 0.642093 0 0...
+1210  ff2cc4de58c5_study  negative 0.426499 0 0 1 1 typical 0.490181 0 0...
+1211  ff2f0a744930_study  negative 0.012947 0 0 1 1 typical 0.970831 0 0...
+1212  ff88940dce8b_study  negative 0.665776 0 0 1 1 typical 0.545548 0 0...
+1213  fff7ef24961f_study  negative 0.187611 0 0 1 1 typical 0.910528 0 0...
+
+[1214 rows x 2 columns]
+
+
+--- [START 2021-07-01_09-17-38] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625131065
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+submit_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold0-fine1/valid/remote-nt/best_model0', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold1-fine1/valid/remote-int/best_model']
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.802394 0 0 1 1 typical 0.285219 0 0...
+1     004bd59708be_study  negative 0.021885 0 0 1 1 typical 0.955850 0 0...
+2     00508faccd39_study  negative 0.743103 0 0 1 1 typical 0.354428 0 0...
+3     006486aa80b2_study  negative 0.513435 0 0 1 1 typical 0.539979 0 0...
+4     00655178fdfc_study  negative 0.712600 0 0 1 1 typical 0.387212 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.528496 0 0 1 1 typical 0.642093 0 0...
+1210  ff2cc4de58c5_study  negative 0.426499 0 0 1 1 typical 0.490181 0 0...
+1211  ff2f0a744930_study  negative 0.012947 0 0 1 1 typical 0.970831 0 0...
+1212  ff88940dce8b_study  negative 0.665776 0 0 1 1 typical 0.545548 0 0...
+1213  fff7ef24961f_study  negative 0.187611 0 0 1 1 typical 0.910528 0 0...
+
+[1214 rows x 2 columns]
+
+
+--- [START 2021-07-01_13-25-10] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625145916
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+submit_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold0-fine1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold1-fine1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold2-fine1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold3-fine1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLDS_WLOSS/fold4-fine1/valid/remote/']
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.856797 0 0 1 1 typical 0.271463 0 0...
+1     004bd59708be_study  negative 0.028392 0 0 1 1 typical 0.950518 0 0...
+2     00508faccd39_study  negative 0.781937 0 0 1 1 typical 0.308117 0 0...
+3     006486aa80b2_study  negative 0.575512 0 0 1 1 typical 0.487233 0 0...
+4     00655178fdfc_study  negative 0.692324 0 0 1 1 typical 0.415295 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.539333 0 0 1 1 typical 0.629528 0 0...
+1210  ff2cc4de58c5_study  negative 0.342297 0 0 1 1 typical 0.415167 0 0...
+1211  ff2f0a744930_study  negative 0.016459 0 0 1 1 typical 0.973369 0 0...
+1212  ff88940dce8b_study  negative 0.674091 0 0 1 1 typical 0.513467 0 0...
+1213  fff7ef24961f_study  negative 0.288598 0 0 1 1 typical 0.843435 0 0...
+
+[1214 rows x 2 columns]
+

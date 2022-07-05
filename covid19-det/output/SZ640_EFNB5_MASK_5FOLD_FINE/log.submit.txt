@@ -1,0 +1,47 @@
+
+--- [START 2021-06-25_10-15-08] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1624616115
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+
+--- [START 2021-06-25_10-15-08] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1624616115
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+submit_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold0-fine2/valid/remote-00009600_model', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold1-fine2/valid/remote-00011200_model', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold2-fine2/valid/remote-00008400_model', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold3-fine2/valid/remote-00004800_model', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold4-fine2/valid/remote-00010400_model']
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.893353 0 0 1 1 typical 0.214577 0 0...
+1     004bd59708be_study  negative 0.035550 0 0 1 1 typical 0.944312 0 0...
+2     00508faccd39_study  negative 0.766662 0 0 1 1 typical 0.303518 0 0...
+3     006486aa80b2_study  negative 0.558907 0 0 1 1 typical 0.505143 0 0...
+4     00655178fdfc_study  negative 0.685684 0 0 1 1 typical 0.403495 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.470083 0 0 1 1 typical 0.672690 0 0...
+1210  ff2cc4de58c5_study  negative 0.450224 0 0 1 1 typical 0.466234 0 0...
+1211  ff2f0a744930_study  negative 0.018752 0 0 1 1 typical 0.966026 0 0...
+1212  ff88940dce8b_study  negative 0.730028 0 0 1 1 typical 0.476584 0 0...
+1213  fff7ef24961f_study  negative 0.220903 0 0 1 1 typical 0.885764 0 0...
+
+[1214 rows x 2 columns]
+

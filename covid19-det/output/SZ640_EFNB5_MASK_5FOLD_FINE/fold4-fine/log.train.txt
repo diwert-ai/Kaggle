@@ -1,0 +1,74 @@
+
+--- [START 2021-06-24_16-35-06] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1624552513
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+	expirement = SZ640_EFNB5_MASK_5FOLD_FINE
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold4-fine
+
+train_dataset : 
+	len = 4983
+	df  = (4983, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1367 (0.2743)
+		 1         Typical Appearance:  2369 (0.4754)
+		 2   Indeterminate Appearance:   867 (0.1740)
+		 3        Atypical Appearance:   380 (0.0763)
+
+valid_dataset : 
+	len = 1244
+	df  = (1244, 10)
+	label distribution
+		 0     Negative for Pneumonia:   342 (0.2749)
+		 1         Typical Appearance:   589 (0.4735)
+		 2   Indeterminate Appearance:   215 (0.1728)
+		 3        Atypical Appearance:    98 (0.0788)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_EFNB5_MASK_5FOLD_FINE/fold4/checkpoint/00008000_model.pth
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.0001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 4
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['SZ640_EFNB5_MASK_5FOLD_FINE']
+                      |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate     iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+-------------------------------------------------------------------------------------------
+0.00000  0.800* 12.86  | 0.920  0.360  0.646  0.821  | 0.000  0.000  0.000  |  0 hr 00 min
+0.00010  0.820* 13.18  | 0.856  0.375  0.678  0.852  | 0.835  0.188  0.000  |  0 hr 01 min
+0.00010  0.840* 13.50  | 0.856  0.377  0.670  0.840  | 0.866  0.183  0.000  |  0 hr 02 min
+0.00010  0.860* 13.83  | 0.857  0.378  0.669  0.840  | 0.840  0.184  0.000  |  0 hr 04 min
+0.00010  0.880  14.15  | 0.885  0.376  0.671  0.834  | 0.792  0.180  0.000  |  0 hr 05 min
+0.00010  0.900  14.47  | 0.856  0.375  0.674  0.846  | 0.832  0.175  0.000  |  0 hr 06 min
+0.00010  0.920  14.79  | 0.868  0.372  0.673  0.838  | 0.829  0.184  0.000  |  0 hr 08 min
+0.00010  0.940  15.11  | 0.863  0.372  0.671  0.840  | 0.857  0.177  0.000  |  0 hr 09 min
+0.00010  0.960  15.43  | 0.867  0.370  0.671  0.842  | 0.797  0.173  0.000  |  0 hr 10 min
+0.00010  0.980  15.76  | 0.864  0.372  0.669  0.838  | 0.830  0.183  0.000  |  0 hr 11 min
+0.00010  1.000  16.08  | 0.866  0.375  0.665  0.841  | 0.795  0.179  0.000  |  0 hr 13 min
+0.00010  1.020  16.40  | 0.869  0.375  0.674  0.839  | 0.826  0.178  0.000  |  0 hr 14 min
+0.00010  1.040* 16.72  | 0.860  0.378  0.669  0.843  | 0.800  0.184  0.000  |  0 hr 15 min
+0.00010  1.060  17.04  | 0.874  0.375  0.662  0.835  | 0.771  0.171  0.000  |  0 hr 17 min
+0.00010  1.080  17.36  | 0.852  0.373  0.666  0.843  | 0.782  0.185  0.000  |  0 hr 18 min
+0.00010  1.100  17.68  | 0.851  0.376  0.669  0.847  | 0.799  0.175  0.000  |  0 hr 19 min
+

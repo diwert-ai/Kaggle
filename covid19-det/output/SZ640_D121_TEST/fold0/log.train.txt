@@ -1,0 +1,187 @@
+
+--- [START 2021-07-06_14-39-55] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625582403
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_D121_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_D121_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['SZ640_D121_TEST']
+                      |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate     iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+-------------------------------------------------------------------------------------------
+
+--- [START 2021-07-06_14-39-55] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625582403
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_D121_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_D121_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['SZ640_D121_TEST']
+                      |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate     iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+-------------------------------------------------------------------------------------------
+0.00000  0.000  0.00  | 1.396  0.169  0.177  0.509  | 0.000  0.000  0.000  |  0 hr 00 min
+0.00100  0.020  0.32  | 1.362  0.200  0.484  0.717  | 1.317  1.140  0.000  |  0 hr 01 min
+0.00100  0.040  0.64  | 1.278  0.231  0.458  0.698  | 1.348  1.084  0.000  |  0 hr 03 min
+0.00100  0.060  0.96  | 4.285  0.219  0.474  0.649  | 1.293  1.036  0.000  |  0 hr 04 min
+0.00100  0.080  1.29  | 2.055  0.252  0.483  0.715  | 1.207  1.026  0.000  |  0 hr 06 min
+0.00100  0.100  1.61  | 1.448  0.289  0.580  0.787  | 1.165  1.028  0.000  |  0 hr 08 min
+0.00100  0.120  1.93  | 1.118  0.300  0.617  0.797  | 1.131  0.932  0.000  |  0 hr 09 min
+
+
+--- [START 2021-07-06_14-39-55] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1625582403
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	expirement = SZ640_D121_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ640_D121_TEST/fold0
+
+train_dataset : 
+	len = 4980
+	df  = (4980, 10)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 10)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  MADGRAD (
+Parameter Group 0
+    eps: 1e-06
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 8
+   experiment = ['SZ640_D121_TEST']
+                      |-----------VALID-------------|-----TRAIN/BATCH -----|------TIME-----
+rate     iter   epoch | loss    map   topk0  topk1  | loss0  loss1  loss2  |               
+-------------------------------------------------------------------------------------------
+0.00000  0.000  0.00  | 1.433  0.188  0.162  0.352  | 0.000  0.000  0.000  |  0 hr 00 min
+0.00100  0.020  0.32  | 1.218  0.250  0.497  0.723  | 1.297  1.136  0.000  |  0 hr 01 min
+0.00100  0.040  0.64  | 1.201  0.243  0.520  0.757  | 1.180  1.053  0.000  |  0 hr 03 min
+0.00100  0.060  0.96  | 1.108  0.275  0.588  0.775  | 1.173  0.968  0.000  |  0 hr 04 min
+0.00100  0.080  1.29  | 1.084  0.292  0.604  0.777  | 1.097  0.928  0.000  |  0 hr 06 min
+0.00100  0.100  1.61  | 1.140  0.286  0.565  0.764  | 1.106  0.910  0.000  |  0 hr 08 min
+0.00100  0.120* 1.93  | 1.073  0.318  0.620  0.791  | 1.068  0.913  0.000  |  0 hr 09 min
+

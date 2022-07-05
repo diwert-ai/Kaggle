@@ -1,0 +1,125 @@
+
+--- [START 2021-07-20_08-27-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1626769681
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+
+--- [START 2021-07-20_08-27-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1626769681
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+
+--- [START 2021-07-20_08-27-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1626769681
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+
+--- [START 2021-07-20_08-27-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1626769681
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+none_image_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold0/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold2/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold3/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold4/valid/remote/']
+
+--- [START 2021-07-20_08-27-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1626769681
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+none_image_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold0/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold2/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold3/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold4/valid/remote/']
+df_none_image : (1263, 2)
+                      id      none
+0     c34113e0228a_image  0.494103
+1     539931eced05_image  0.500107
+2     53c971120ab1_image  0.507894
+3     3dcdfc352a06_image  0.802233
+4     59a0fc64bd20_image  0.727764
+...                  ...       ...
+1258  83594e6ad0ba_image  0.903569
+1259  eebfaa5e1a65_image  0.511988
+1260  5a73ab51749e_image  0.551142
+1261  8ad2e769d2b0_image  0.736403
+1262  88b9ca325a4c_image  0.508767
+
+[1263 rows x 2 columns]
+
+
+--- [START 2021-07-20_08-27-50] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1626769681
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+none_image_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold0/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold2/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold3/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ640_2CLASS_5FOLDS_WLOSS_OHEM/fold4/valid/remote/']
+df_none_image : (1263, 2)
+                      id      none
+0     c34113e0228a_image  0.246475
+1     539931eced05_image  0.252066
+2     53c971120ab1_image  0.260796
+3     3dcdfc352a06_image  0.645100
+4     59a0fc64bd20_image  0.553274
+...                  ...       ...
+1258  83594e6ad0ba_image  0.818271
+1259  eebfaa5e1a65_image  0.263731
+1260  5a73ab51749e_image  0.305587
+1261  8ad2e769d2b0_image  0.551185
+1262  88b9ca325a4c_image  0.260872
+
+[1263 rows x 2 columns]
+

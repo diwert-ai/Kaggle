@@ -1,0 +1,90 @@
+
+--- [START 2021-06-23_19-58-30] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1624478317
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = None
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 8)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 01 min 
+probability (1263, 4) 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ600_EFNB5_MASK_5FOLDS/fold0-fine/valid/remote-00004200_model
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ600_EFNB5_MASK_5FOLDS/fold0-fine/checkpoint/00004200_model.pth
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.755595 0 0 1 1 typical 0.076832 0 0...
+1     004bd59708be_study  negative 0.001535 0 0 1 1 typical 0.888261 0 0...
+2     00508faccd39_study  negative 0.758561 0 0 1 1 typical 0.032257 0 0...
+3     006486aa80b2_study  negative 0.113562 0 0 1 1 typical 0.481768 0 0...
+4     00655178fdfc_study  negative 0.517761 0 0 1 1 typical 0.273386 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.090151 0 0 1 1 typical 0.713746 0 0...
+1210  ff2cc4de58c5_study  negative 0.068120 0 0 1 1 typical 0.163970 0 0...
+1211  ff2f0a744930_study  negative 0.000098 0 0 1 1 typical 0.963550 0 0...
+1212  ff88940dce8b_study  negative 0.540815 0 0 1 1 typical 0.287467 0 0...
+1213  fff7ef24961f_study  negative 0.138079 0 0 1 1 typical 0.620613 0 0...
+
+[1214 rows x 2 columns]
+
+
+--- [START 2021-06-24_11-34-48] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1624534495
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 8)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+probability (1263, 4) 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ600_EFNB5_MASK_5FOLDS/fold0-fine/valid/remote-00004200_model
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ600_EFNB5_MASK_5FOLDS/fold0-fine/checkpoint/00004200_model.pth
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.755595 0 0 1 1 typical 0.076832 0 0...
+1     004bd59708be_study  negative 0.001535 0 0 1 1 typical 0.888261 0 0...
+2     00508faccd39_study  negative 0.758561 0 0 1 1 typical 0.032257 0 0...
+3     006486aa80b2_study  negative 0.113562 0 0 1 1 typical 0.481768 0 0...
+4     00655178fdfc_study  negative 0.517761 0 0 1 1 typical 0.273386 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.090151 0 0 1 1 typical 0.713746 0 0...
+1210  ff2cc4de58c5_study  negative 0.068120 0 0 1 1 typical 0.163970 0 0...
+1211  ff2f0a744930_study  negative 0.000098 0 0 1 1 typical 0.963550 0 0...
+1212  ff88940dce8b_study  negative 0.540815 0 0 1 1 typical 0.287467 0 0...
+1213  fff7ef24961f_study  negative 0.138079 0 0 1 1 typical 0.620613 0 0...
+
+[1214 rows x 2 columns]
+

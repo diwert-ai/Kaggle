@@ -1,0 +1,135 @@
+
+--- [START 2021-07-25_11-00-24] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627210829
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	__file__ = SZ768_YOLO5X_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ768_YOLO5X_TEST/fold0
+
+df_fold_file  : df_fold_rand830.csv
+train_dataset : 
+	len = 4980
+	df  = (4980, 12)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 12)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+
+--- [START 2021-07-25_11-03-56] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627211043
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	__file__ = SZ768_YOLO5X_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ768_YOLO5X_TEST/fold0
+
+df_fold_file  : df_fold_rand830.csv
+train_dataset : 
+	len = 4980
+	df  = (4980, 12)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 12)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+
+--- [START 2021-07-25_11-06-59] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627211226
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+	__file__ = SZ768_YOLO5X_TEST
+	out_dir  = /content/drive/My Drive/kaggle/covid19-det/output/SZ768_YOLO5X_TEST/fold0
+
+df_fold_file  : df_fold_rand830.csv
+train_dataset : 
+	len = 4980
+	df  = (4980, 12)
+	label distribution
+		 0     Negative for Pneumonia:  1366 (0.2743)
+		 1         Typical Appearance:  2367 (0.4753)
+		 2   Indeterminate Appearance:   864 (0.1735)
+		 3        Atypical Appearance:   383 (0.0769)
+
+valid_dataset : 
+	len = 1247
+	df  = (1247, 12)
+	label distribution
+		 0     Negative for Pneumonia:   343 (0.2751)
+		 1         Typical Appearance:   591 (0.4739)
+		 2   Indeterminate Appearance:   218 (0.1748)
+		 3        Atypical Appearance:    95 (0.0762)
+
+
+** net setting **
+net=<class '__main__.AmpNet'>
+	initial_checkpoint = None
+
+optimizer
+  Lookahead (
+Parameter Group 0
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    step_counter: 0
+    weight_decay: 0
+)
+
+** start training here! **
+   fold = 0
+   is_mixed_precision = True 
+   batch_size = 16
+   experiment = SZ768_YOLO5X_TEST
+                           |----- VALID ---|---- TRAIN/BATCH --------------
+rate    plt    iter  epoch | loss1  loss2  | loss1  loss2  | time          
+----------------------------------------------------------------------------n

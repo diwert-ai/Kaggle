@@ -1,0 +1,315 @@
+
+--- [START 2021-07-27_04-43-15] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627361003
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 10)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+detection 1263 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/valid/remote
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/checkpoint/best_model.pth
+df_submit : (1263, 2)
+                      id                                   PredictionString
+0     c34113e0228a_image   opacity 0.42168  125 1014 1119 3184 opacity 0...
+1     539931eced05_image   opacity 0.62739  240  243 1040 1494 opacity 0...
+2     53c971120ab1_image   opacity 0.53823  578  604 1623 2402 opacity 0...
+3     3dcdfc352a06_image   opacity 0.34588  818 1826 1592 2444 opacity 0...
+4     59a0fc64bd20_image   opacity 0.37335  -73  416  954 1895 opacity 0...
+...                  ...                                                ...
+1258  83594e6ad0ba_image   opacity 0.10992 1753  605 2623 2306 opacity 0...
+1259  eebfaa5e1a65_image   opacity 0.45203 1784  714 2646 2201 opacity 0...
+1260  5a73ab51749e_image   opacity 0.29985 1375  942 1754 1302 opacity 0...
+1261  8ad2e769d2b0_image   opacity 0.18644 2302 1633 2804 2073 opacity 0...
+1262  88b9ca325a4c_image   opacity 0.52658  367  690 1022 2139 opacity 0...
+
+[1263 rows x 2 columns]
+
+
+--- [START 2021-07-27_08-14-52] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627373701
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 10)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+detection 1263 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/valid/remote
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/checkpoint/best_model.pth
+df_submit : (1263, 2)
+                      id                                   PredictionString
+0     c34113e0228a_image   opacity 0.48059  105  982 1123 3204 opacity 0...
+1     539931eced05_image   opacity 0.65366  237  229 1047 1498 opacity 0...
+2     53c971120ab1_image   opacity 0.56791  558  596 1617 2429 opacity 0...
+3     3dcdfc352a06_image   opacity 0.32403  811 1842 1584 2460 opacity 0...
+4     59a0fc64bd20_image   opacity 0.43728 -155  445  908 1893 opacity 0...
+...                  ...                                                ...
+1258  83594e6ad0ba_image   opacity 0.10826 1689  446 2659 2475 opacity 0...
+1259  eebfaa5e1a65_image   opacity 0.52423 1763  705 2674 2214 opacity 0...
+1260  5a73ab51749e_image   opacity 0.29165 1368  940 1761 1310 opacity 0...
+1261  8ad2e769d2b0_image   opacity 0.16707 2281 1634 2808 2081 opacity 0...
+1262  88b9ca325a4c_image   opacity 0.55679  348  672 1027 2162 opacity 0...
+
+[1263 rows x 2 columns]
+
+
+--- [START 2021-07-29_11-54-06] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627559657
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 10)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+detection 1263 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/valid/remote
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/checkpoint/best_model.pth
+df_submit : (1263, 2)
+                      id                                   PredictionString
+0     c34113e0228a_image   opacity 0.48059  105  982 1123 3204 opacity 0...
+1     539931eced05_image   opacity 0.65366  237  229 1047 1498 opacity 0...
+2     53c971120ab1_image   opacity 0.56791  558  596 1617 2429 opacity 0...
+3     3dcdfc352a06_image   opacity 0.32403  811 1842 1584 2460 opacity 0...
+4     59a0fc64bd20_image   opacity 0.43728 -155  445  908 1893 opacity 0...
+...                  ...                                                ...
+1258  83594e6ad0ba_image   opacity 0.10826 1689  446 2659 2475 opacity 0...
+1259  eebfaa5e1a65_image   opacity 0.52423 1763  705 2674 2214 opacity 0...
+1260  5a73ab51749e_image   opacity 0.29165 1368  940 1761 1310 opacity 0...
+1261  8ad2e769d2b0_image   opacity 0.16707 2281 1634 2808 2081 opacity 0...
+1262  88b9ca325a4c_image   opacity 0.55679  348  672 1027 2162 opacity 0...
+
+[1263 rows x 2 columns]
+
+
+--- [START 2021-07-29_11-54-06] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627559657
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 10)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+detection 1263 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/valid/remote
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/checkpoint/best_model.pth
+df_submit : (1263, 2)
+                      id                                   PredictionString
+0     c34113e0228a_image   opacity 0.48059  105  982 1123 3204 opacity 0...
+1     539931eced05_image   opacity 0.65366  237  229 1047 1498 opacity 0...
+2     53c971120ab1_image   opacity 0.56791  558  596 1617 2429 opacity 0...
+3     3dcdfc352a06_image   opacity 0.32403  811 1842 1584 2460 opacity 0...
+4     59a0fc64bd20_image   opacity 0.43728 -155  445  908 1893 opacity 0...
+...                  ...                                                ...
+1258  83594e6ad0ba_image   opacity 0.10826 1689  446 2659 2475 opacity 0...
+1259  eebfaa5e1a65_image   opacity 0.52423 1763  705 2674 2214 opacity 0...
+1260  5a73ab51749e_image   opacity 0.29165 1368  940 1761 1310 opacity 0...
+1261  8ad2e769d2b0_image   opacity 0.16707 2281 1634 2808 2081 opacity 0...
+1262  88b9ca325a4c_image   opacity 0.55679  348  672 1027 2162 opacity 0...
+
+[1263 rows x 2 columns]
+
+
+--- [START 2021-07-29_11-54-06] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627559657
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 10)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+detection 1263 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/valid/remote
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/checkpoint/best_model.pth
+df_submit : (1263, 2)
+                      id                                   PredictionString
+0     c34113e0228a_image   opacity 0.48059  105  982 1123 3204 opacity 0...
+1     539931eced05_image   opacity 0.65366  237  229 1047 1498 opacity 0...
+2     53c971120ab1_image   opacity 0.56791  558  596 1617 2429 opacity 0...
+3     3dcdfc352a06_image   opacity 0.32403  811 1842 1584 2460 opacity 0...
+4     59a0fc64bd20_image   opacity 0.43728 -155  445  908 1893 opacity 0...
+...                  ...                                                ...
+1258  83594e6ad0ba_image   opacity 0.10826 1689  446 2659 2475 opacity 0...
+1259  eebfaa5e1a65_image   opacity 0.52423 1763  705 2674 2214 opacity 0...
+1260  5a73ab51749e_image   opacity 0.29165 1368  940 1761 1310 opacity 0...
+1261  8ad2e769d2b0_image   opacity 0.16707 2281 1634 2808 2081 opacity 0...
+1262  88b9ca325a4c_image   opacity 0.55679  348  672 1027 2162 opacity 0...
+
+[1263 rows x 2 columns]
+
+
+--- [START 2021-07-29_11-54-06] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627559657
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 10)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+detection 1263 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/valid/remote
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/checkpoint/best_model.pth
+df_submit : (1263, 2)
+                      id                                   PredictionString
+0     c34113e0228a_image   opacity 0.48059  105  982 1123 3204 opacity 0...
+1     539931eced05_image   opacity 0.65366  237  229 1047 1498 opacity 0...
+2     53c971120ab1_image   opacity 0.56791  558  596 1617 2429 opacity 0...
+3     3dcdfc352a06_image   opacity 0.32403  811 1842 1584 2460 opacity 0...
+4     59a0fc64bd20_image   opacity 0.43728 -155  445  908 1893 opacity 0...
+...                  ...                                                ...
+1258  83594e6ad0ba_image   opacity 0.10826 1689  446 2659 2475 opacity 0...
+1259  eebfaa5e1a65_image   opacity 0.52423 1763  705 2674 2214 opacity 0...
+1260  5a73ab51749e_image   opacity 0.29165 1368  940 1761 1310 opacity 0...
+1261  8ad2e769d2b0_image   opacity 0.16707 2281 1634 2808 2081 opacity 0...
+1262  88b9ca325a4c_image   opacity 0.55679  348  672 1027 2162 opacity 0...
+
+[1263 rows x 2 columns]
+
+
+--- [START 2021-07-29_11-54-06] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627559657
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla V100-SXM2-16GB', major=7, minor=0, total_memory=16160MB, multi_processor_count=80)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 10)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+detection 1263 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/valid/remote
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ640_YOLO_TEST3/fold1/checkpoint/best_model.pth
+df_submit : (1263, 2)
+                      id                                   PredictionString
+0     c34113e0228a_image   opacity 0.48059  105  982 1123 3204 opacity 0...
+1     539931eced05_image   opacity 0.65366  237  229 1047 1498 opacity 0...
+2     53c971120ab1_image   opacity 0.56791  558  596 1617 2429 opacity 0...
+3     3dcdfc352a06_image   opacity 0.32403  811 1842 1584 2460 opacity 0...
+4     59a0fc64bd20_image   opacity 0.43728    0  445  908 1893 opacity 0...
+...                  ...                                                ...
+1258  83594e6ad0ba_image   opacity 0.10826 1689  446 2659 2475 opacity 0...
+1259  eebfaa5e1a65_image   opacity 0.52423 1763  705 2674 2214 opacity 0...
+1260  5a73ab51749e_image   opacity 0.29165 1368  940 1761 1310 opacity 0...
+1261  8ad2e769d2b0_image   opacity 0.16707 2281 1634 2808 2081 opacity 0...
+1262  88b9ca325a4c_image   opacity 0.55679  348  672 1027 2162 opacity 0...
+
+[1263 rows x 2 columns]
+

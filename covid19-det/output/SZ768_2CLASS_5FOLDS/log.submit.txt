@@ -1,0 +1,64 @@
+
+--- [START 2021-07-24_12-29-23] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627129768
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+none_image_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold0/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold2/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold3/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold4/valid/remote/']
+df_none_image : (1263, 2)
+                      id      none
+0     c34113e0228a_image  0.080088
+1     539931eced05_image  0.044027
+2     53c971120ab1_image  0.160208
+3     3dcdfc352a06_image  0.787763
+4     59a0fc64bd20_image  0.270344
+...                  ...       ...
+1258  83594e6ad0ba_image  0.836044
+1259  eebfaa5e1a65_image  0.118421
+1260  5a73ab51749e_image  0.352066
+1261  8ad2e769d2b0_image  0.677782
+1262  88b9ca325a4c_image  0.098656
+
+[1263 rows x 2 columns]
+
+
+--- [START 2021-07-24_12-29-23] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1627129768
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = 0
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla P100-PCIE-16GB', major=6, minor=0, total_memory=16280MB, multi_processor_count=56)
+
+
+
+none_image_dir : ['/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold0/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold1/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold2/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold3/valid/remote/', '/content/drive/My Drive/kaggle/covid19-det/output/SZ768_2CLASS_5FOLDS/fold4/valid/remote/']
+df_none_image : (1263, 2)
+                      id      none
+0     c34113e0228a_image  0.080088
+1     539931eced05_image  0.044027
+2     53c971120ab1_image  0.160208
+3     3dcdfc352a06_image  0.787763
+4     59a0fc64bd20_image  0.270344
+...                  ...       ...
+1258  83594e6ad0ba_image  0.836044
+1259  eebfaa5e1a65_image  0.118421
+1260  5a73ab51749e_image  0.352066
+1261  8ad2e769d2b0_image  0.677782
+1262  88b9ca325a4c_image  0.098656
+
+[1263 rows x 2 columns]
+

@@ -1,0 +1,90 @@
+
+--- [START 2021-06-19_16-53-58] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1624121645
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = None
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla T4', major=7, minor=5, total_memory=15109MB, multi_processor_count=40)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 8)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+probability (1263, 4) 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ256_EFB3A_MASK/fold1-fine/valid/remote-00012000_model
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ256_EFB3A_MASK/fold1-fine/checkpoint/00012000_model.pth
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.954286 0 0 1 1 typical 0.002472 0 0...
+1     004bd59708be_study  negative 0.000220 0 0 1 1 typical 0.997405 0 0...
+2     00508faccd39_study  negative 0.688015 0 0 1 1 typical 0.051482 0 0...
+3     006486aa80b2_study  negative 0.046708 0 0 1 1 typical 0.538884 0 0...
+4     00655178fdfc_study  negative 0.660296 0 0 1 1 typical 0.183229 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.618404 0 0 1 1 typical 0.308896 0 0...
+1210  ff2cc4de58c5_study  negative 0.529317 0 0 1 1 typical 0.267451 0 0...
+1211  ff2f0a744930_study  negative 0.000044 0 0 1 1 typical 0.994574 0 0...
+1212  ff88940dce8b_study  negative 0.837843 0 0 1 1 typical 0.088175 0 0...
+1213  fff7ef24961f_study  negative 0.545241 0 0 1 1 typical 0.378812 0 0...
+
+[1214 rows x 2 columns]
+
+
+--- [START 2021-06-19_16-53-58] ----------------------------------------------------------------
+
+	@common.py:  
+	pytorch
+		seed = 1624121645
+		torch.__version__              = 1.9.0+cu102
+		torch.version.cuda             = 10.2
+		torch.backends.cudnn.version() = 7605
+		os['CUDA_VISIBLE_DEVICES']     = None
+		torch.cuda.device_count()      = 1
+		torch.cuda.get_device_properties() = (name='Tesla T4', major=7, minor=5, total_memory=15109MB, multi_processor_count=40)
+
+
+
+mode : remote
+valid_dataset : 
+	len = 1263
+	df  = (1263, 8)
+	label distribution
+		 0     Negative for Pneumonia:     0 (0.0000)
+		 1         Typical Appearance:     0 (0.0000)
+		 2   Indeterminate Appearance:     0 (0.0000)
+		 3        Atypical Appearance:     0 (0.0000)
+
+time  0 hr 00 min 
+probability (1263, 4) 
+submit_dir : /content/drive/My Drive/kaggle/covid19-det/output/SZ256_EFB3A_MASK/fold1-fine/valid/remote-00002600_model
+initial_checkpoint : /content/drive/My Drive/kaggle/covid19-det/output/SZ256_EFB3A_MASK/fold1-fine/checkpoint/00002600_model.pth
+df_submit : (1214, 2)
+                      id                                   PredictionString
+0     00188a671292_study  negative 0.831515 0 0 1 1 typical 0.050504 0 0...
+1     004bd59708be_study  negative 0.013098 0 0 1 1 typical 0.819092 0 0...
+2     00508faccd39_study  negative 0.615395 0 0 1 1 typical 0.059458 0 0...
+3     006486aa80b2_study  negative 0.233993 0 0 1 1 typical 0.328256 0 0...
+4     00655178fdfc_study  negative 0.554705 0 0 1 1 typical 0.149916 0 0...
+...                  ...                                                ...
+1209  ff1ba0e9aaf0_study  negative 0.237443 0 0 1 1 typical 0.422063 0 0...
+1210  ff2cc4de58c5_study  negative 0.497920 0 0 1 1 typical 0.123525 0 0...
+1211  ff2f0a744930_study  negative 0.001719 0 0 1 1 typical 0.907997 0 0...
+1212  ff88940dce8b_study  negative 0.604521 0 0 1 1 typical 0.132992 0 0...
+1213  fff7ef24961f_study  negative 0.154191 0 0 1 1 typical 0.611786 0 0...
+
+[1214 rows x 2 columns]
+
