@@ -1,0 +1,6 @@
+1. mixup (cutmix) для двух батчей (tfrecords)
+2. быстрая аугментация (векторизация вычислений) https://www.kaggle.com/c/flower-classification-with-tpus/discussion/134264 https://www.kaggle.com/c/flower-classification-with-tpus/discussion/133168
+3. stratified и group KFold 
+4. metadata как данные для обучения
+5. PL
+
