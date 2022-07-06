@@ -1,18 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\birdcall\\input",
-    "\\birdcall\\nbs",
-    "\\birdcall\\output",
-    "\\birdcall\\output\\birdcall_1draft",
-    "\\birdcall\\output\\birdcall_1draft\\chkp",
-    "\\birdcall\\output\\birdcall_1draft\\fold0",
-    "\\brain-tumor\\nbs",
-    "\\brain-tumor\\nbs\\py",
-    "\\brain-tumor\\nbs\\py\\hcode",
     "\\gi_t_is\\nbs\\py",
     "\\gi_t_is\\nbs\\py\\luminide_code"
   ],
-  "SelectedNode": "\\gi_t_is",
   "PreviewInSolutionExplorer": false
 }
